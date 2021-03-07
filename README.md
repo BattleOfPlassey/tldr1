@@ -1,6 +1,6 @@
-# 📰 Inshorts News API v2
+# 📰 TLDR News API v2
 
-#### This is the v2 for my previous Inshorts News API. You can check out the v1 [here.](https://github.com/sumitkolhe/inshorts-api)
+#### This version uses web-scraping to get news articles from inshorts.com.
 
 # :sparkles: Features
 
@@ -36,7 +36,7 @@ Here is a complete list of all the supported categories.
 
 You can use either of the categories from [News Categories](#card_file_box-news-categories)
 
-**Base endpoint :** `https://inshortsv2.vercel.app/news`
+**Base endpoint :** `https://tldr-pink.vercel.app/news`
 
 Make a `GET`request to the **Base endpoint** with the name of the category to get the corresponding news in JSON format
 
@@ -44,11 +44,11 @@ Make a `GET`request to the **Base endpoint** with the name of the category to ge
 https://inshortsv2.vercel.app/news?type={category name}
 ```
 
-**Example** - https://inshortsv2.vercel.app/news?type=all_news
+**Example** - https://tldr-pink.vercel.app//news?type=all_news
 
 To limit the number of results per page, add `{limit}` at the end of the API url.
 
-**Example** - https://inshortsv2.vercel.app/news?type=all_news&limit=23 
+**Example** - https://tldr-pink.vercel.app//news?type=all_news&limit=23 
 - This will limit the results to 23 for that request.
 
 > **NOTE :** If no limit is provided, default limit is set to 10 results per page.
@@ -101,9 +101,9 @@ The response JSON Object looks something like this -
 - Clone the Repo
 
   ```
-  $ git clone https://github.com/sumitkolhe/inshorts-api-v2
+  $ git clone git@github.com:lameguest21/tldr1.git
 
-  $ cd inshorts-api-v2
+
   ```
 
 - Install the dependencies
@@ -124,9 +124,4 @@ The response JSON Object looks something like this -
   npm run deploy
   ```
 
-# :rocket: Deploy to Vercel
 
-**You can directly deploy this repo to your Vercel account by clicking the button below.**
-<br>
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/sumitkolhe/inshorts-api-v2)
